@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;  
+    padding-left: 40px;  
+}
+h2{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 200px;
+}
+table{
+    margin: auto;
+}
+header{
+    background: grey;
+    border: 1px solid #999999;
+    padding: 10px;
+}
+nav{
+    background: cadetblue;
+    padding: 5px 15px;
+    text-align: center;
+}
+footer{
+    clear: both;
+    text-align: center;
+    background: cyan;
+}
+body{
+    background: #9999ff;
+}
