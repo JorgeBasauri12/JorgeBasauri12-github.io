@@ -26,7 +26,7 @@ h3{
 article table{
     margin-left: 200px;
 }
-header{
+.cabecera{
     background: grey;
     border: 1px solid #999999;
     padding: 10px;
@@ -39,7 +39,7 @@ nav{
     padding: 5px 15px;
     text-align: center;
 }
-footer{
+.pie{
     clear: both;
     text-align: center;
     background: cyan;

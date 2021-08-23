@@ -27,7 +27,7 @@ section{
     margin: 0; 
       
 }
-header{
+.cabecera{
     background: grey;
     border: 1px solid #999999;
     padding: 10px;
@@ -70,12 +70,10 @@ article h3{
     width: 28%;    
     float: left;    
 }
-footer{
+.pie{
     clear: both;
+    text-align: center;
     background: cyan;
-    font-family: cursiva;
-    margin-bottom: 0;
-    text-align-last: center;    
 }
 
 
