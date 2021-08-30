@@ -7,66 +7,125 @@
         <title>Contactos</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="estilopersonal/estilopersonalcontact.css">
+        <link rel="stylesheet" href="estilopersonal/estilopersonal.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
-    <body>         
+    <body>   
+        <div  class = "BarraSocial" >
+            <ul>
+                <li> <a  href = "https://www.linkedin.com/in/jorge-francisco-basauri-espinoza-27b64a185/" target =" _blank "> <i  class =" fa fa-linkedin linkedin icono " > </i > </a > </li >
+                <li> <a  href = "https://www.facebook.com/francisco.basauriespinosa " target =" _blank " > <i  class =" fa fa-facebook facebook icono " > </i > </a > </li >
+                <li> <a  href = "https://wa.me/qr/AQHZHLAKQFVXI1" target =" _blanck " > <i  class =" fa fa-whatsapp Whatsapp icono " > </i > </a > </li >
+                <li> <a  href = "https://www.instagram.com/franciscobasauriespinoza/" target =" _blanck " > <i  class =" fa icono instagram fa-instagram " > </i > </a > </li >
+                <li> <a  href = "https://twitter.com/jbdiablito" target =" _blank "> <i  class =" fa icono twitter fa-twitter " > </i > </a > </li >
+            </ul >
+        </div >             
         <div>
             <header class="cabecera">               
-                <h1><b>CONTACTOS</b></h1>                
+                <nav class="navbar navbar-expand-lg navbar-black bg-black" id="menu">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Medios de contacto</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="acerca.html">About</a>
+                          </li>                                               
+                        </ul>                        
+                      </div>
+                    </div>
+                  </nav>               
             </header>        
-            <nav>
-                <a href="index.html">HOME</a> 
-            </nav>
             <br>                  
-            <h2>Para más información</h2>  
-            <br>          
-            <table border="2">
-                <tr>
-                    <th colspan="3">Formas de contactarme</th>                                                
-                </tr>
-                <tr>
-                    <th>Redes Sociales</th>
-                    <th>Links</th>
-                    <th>Imagen</th>
-                </tr>
-                <tr>
-                    <td><b>FACEBOOK</b></td>
-                    <td><a href="https://www.facebook.com/francisco.basauriespinosa">Jorge Basauri Espinoza</a></td>
-                    <td><img src="imagenes/facebook.JPG" alt="facebook" width="100" height="75"/></td>
-                </tr>
-                <tr>
-                    <td><b>GMAIL</b></td>
-                    <td><a href="https://mail.google.com/mail/u/1/#inbox?compose=new">jbasaurie15@unc.edu.pe</a></td>
-                    <td><img src="imagenes/gmail.JPG" alt="gmail" width="100" height="75"/></td>
-                </tr>
-                <tr>
-                    <td><b>INSTAGRAM</b></td>
-                    <td><a href="https://www.instagram.com/franciscobasauriespinoza/">franciscobasauriespinoza</a></td>
-                    <td><img src="imagenes/instagram.JPG" alt="instagram" width="100" height="75"/></td>
-                </tr>
-                <tr>
-                    <td><b>TWITTER</b></td>
-                    <td><a href="https://twitter.com/jbdiablito">Jorge Basauri</a></td>
-                    <td><img src="imagenes/twitter.JPG" alt="twitter" width="100" height="75"/></td>
-                </tr>
-                <tr>
-                    <td><b>lINKEDIN</b></td>
-                    <td><a href="https://www.linkedin.com/in/jorge-francisco-basauri-espinoza-27b64a185/">Jorge Basauri Espinoza</a></td>
-                    <td><img src="imagenes/linkedin.JPG" alt="linkedin" width="100" height="75"/></td>
-                </tr>
-                <tr>
-                    <td><b>WHATSAPP</b></td>
-                    <td><a href="https://wa.me/qr/AQHZHLAKQFVXI1">975712323</a></td>
-                    <td><img src="imagenes/Whatsapp.JPG" alt="Whatsapp" width="100" height="75"/></td>
-                </tr>
-            </table>  
+            <h2 class="InforComen"> Puedes contactarme y enviarme un comentario</h2 >  
+            <br>                    
+            <form class="formulario">
+                <div class="mb-3" id="form1">
+                    <div class=" row" id="formulario">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                  <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+                  <br>
+                  <div>
+                    <button type="submit" class="btn btn-primary">enviarme</button>
+                  </div>                  
+                </div>  
+                <div>
+                    <div  class = " indiceContact " >
+                        <ul  class = " indice-coment " >
+                            <li  class = " listaconta " >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <a  href = "index.html"> +51 975 712 323</a >
+                            </li >
+                            <li  class = " listaconta ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                  </svg>
+                                <a  href = "acerca.html" > jbasaurie15@unc.edu.pe</a >
+                            </li >
+                            
+                        </ul >
+                    </div >
+                </div>               
+            </form>
+           
             <br>          
         </div>
-        <hr>       
-             <footer class="pie">                                 
-                <h4><i>(c) Jorge Francisco Basauri Espinoza</i></h4>                       
-            </footer>
-        </hr>
-        <script src="" async defer></script>
+        <footer>
+            <div  class = " MenuPie " >
+                <div class="imapie">
+                    <img src="imagenes/eapis2.png" alt="eapis">
+                    <img src="imagenes/unc2.png" alt="unc">
+                </div>                 
+                <div  class = " indiceIcon " >
+                    <ul  class = " indice-lista " >
+                        <li  class = " listaIcon " >
+                            <svg  class = " icono " xmlns = " http://www.w3.org/2000/svg " width = " 30 " height = " 30 " fill = " currentColor " class = " bi-bi-house-fill " viewBox = " 0 0 16 16 " >
+                                <path  fill-rule = " evenodd " d = " m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2 .5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z "/>
+                                <path  fill-rule = " evenodd " d = " M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-. 708L7.293 1.5z "/>
+                            </svg >
+                            <a  href = "index.html">Home </a >
+                        </li >
+                        <li  class = " listaIcon ">
+                            <svg  class = " icono " xmlns = " http://www.w3.org/2000/svg " width = " 30 " height = " 30 " fill = " currentColor " class = " bi bi-person-fill " viewBox = " 0 0 16 16 " >
+                                <path  d = " M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z " />
+                            </svg >
+                            <a  href = "acerca.html" > Acerca de</a >
+                        </li >
+                        <li  class = " listaIcon ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                            <a  href = "contact.html"> Contactame</una>
+                        </li >
+                    </ul >
+                </div >
+                                            
+          </div >
+            <h3  class = " titulo-final " > (c) Jorge Basauri Espinoza </h3 >
+        </footer>
+        <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>

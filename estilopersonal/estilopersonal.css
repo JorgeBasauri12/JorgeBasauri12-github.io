@@ -1,0 +1,258 @@
+body{
+    overflow-x: hidden;
+}
+#menu a{
+    
+    font-size: 18px;
+    font-weight: bold;
+    color: #f3d0d0;
+}
+#menu form > button{
+ font-size: 18px;
+ font-weight: bold;
+}
+.navbar-collapse{
+    flex-grow: none;
+}
+.BarraSocial {
+    position: fixed; 
+    left: 0; 
+    top: 300px; 
+    z-index: 2000; 
+}            
+.BarraSocial ul {
+    list-style: none;
+    padding-left: 0;
+}
+            
+.BarraSocial ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; 
+}
+.facebook{
+    padding: 2.5px;
+}
+
+.BarraSocial ul li a:hover {
+    background: rgb(145, 60, 3); 
+    padding: 10px 30px; 
+}
+@media screen and (max-width:900px){
+    .BarraSocial ul li a:hover {
+        background: rgb(145, 60, 3);
+        padding: 10px 15px; 
+    }
+}
+.carousel-inner{
+    max-height: 39rem;
+    
+}
+.slide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    position:absolute;
+}
+
+.presentacion{
+    padding-top: 100px;
+    font-size: 40pt;
+    color: black;
+}
+.slide > p{
+    font-size: 20pt;
+    color: rgb(41, 39, 39);
+}
+.contenedor{
+    padding-top: 20%;
+}
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .carousel-inner{
+        max-height: 12rem;
+        
+    }
+    .jesus{
+        width: 1440px;
+        height: 200px;        
+    }
+    .contenedor{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentacion{
+        padding-top: 80px;
+        font-size: 25px;
+        width: 90%;        
+    }
+    .slide > p{
+        font-size: 10pt;
+       
+    }
+    .contenedor{
+        padding: 1;
+    }
+    .contenedor .contenido-texto{
+        width: 90%;
+        padding-top: 100px;
+    }
+    .imagenportada{       
+        width: 10%;
+    }
+}
+.titulo{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: blueviolet;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px; 
+
+}
+.contenedor{
+    padding-bottom: 60px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: justify;
+    margin: auto; 
+    overflow: hidden;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenido-texto{
+    padding-top: 50px;
+    padding-right: 30px;
+    word-spacing: 5pt;  
+    line-height: 20pt; 
+}
+.contenedor img{
+    width: 30%;
+}
+footer{
+    background:#af541c;
+    padding: 40px 0 20px 0;
+    margin: auto;
+    overflow: hidden;    
+}
+.MenuPie{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content:space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.indiceIcon{
+    display: flex;
+}
+.listaIcon a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+.imapie >img{
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+@media screen and (max-width:900px){
+    footer{
+        background-position: center;
+    }
+    .MenuPie{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imapie{
+        padding: 20px;
+        padding-left: 80px;
+        align-items: center;
+    }    
+}
+.titulo-final{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+.InforComen{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25pt;
+    color: black;
+}
+form{
+    display: flex;
+    justify-content: center;        
+} 
+#form1{
+    background: rgb(168, 168, 168);
+    padding: 30px;
+    border-radius: 5px;
+}
+.indiceContact{
+    display: flex;
+}
+.listaconta a{
+    text-decoration: none;
+    color: rgb(91, 58, 240);
+    padding: 20px;
+    display: inline-block;
+}
+@media screen and (max-width:900px){
+    form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    indiceContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+#primeros{
+    display: flex;
+    justify-content: space-evenly;
+}
+#caballo{
+    height: 33.5vh;
+}
+@media screen and (max-width:900px){
+    #primeros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #caballo{
+        height: 33.5vh;
+    }
+}
+
+
+
