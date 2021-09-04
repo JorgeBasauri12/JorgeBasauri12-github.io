@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     overflow-x: hidden;
 }
@@ -253,6 +257,130 @@ form{
         height: 33.5vh;
     }
 }
-
-
-
+/*-----Laboratorio 05-----*/
+.body{    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px; 
+}
+.Cuerpo{
+    border: 1px solid rgb(189, 241, 189);
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 7px;
+}
+.cuerpoS{
+    display: flex;
+    padding-left: 140px;
+    margin-top: 40px;
+}
+.NomApe{
+    display: flex;
+    margin-bottom: 2px;    
+}
+.AN, .Fecha{
+    border: 1px solid blue;
+    background: #4169e1;
+    color: white;
+    padding: 7px;
+    padding-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Botones{
+    display: flex;
+    align-items: flex-start;
+}
+.Extraer{
+    margin-top: 15px;
+    margin-right: 30px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: #ffd700;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.Colorear{
+    margin-top: 15px;
+    margin-right: 30px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: #cd5c5c;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#NombresyApellidos, #FechaNacimiento{
+    align-self: center;
+    padding: 10px;
+    border: 1px solid red;
+}
+.CuadroUno{
+    display: flex;
+    margin-bottom: 2px;
+}
+.Cuerpo{
+    background: #7fffd4;
+    padding-top: 30px;
+}
+.Fila{
+    padding-right: 240px;
+    padding-bottom: 50px;
+}
+.cuerpoI{
+    display: flex;
+    padding-left: 200px;
+    padding-bottom: 50px;
+}
+.CuadroDos{
+    display: flex;
+    margin-bottom: 2px;
+}
+.AP,.AM,.N{
+    border: 1px solid blue;
+    background: #4169e1;
+    color: white;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.AM{
+    padding-right: 45px;
+}
+.AP{
+    padding-right: 50px;
+}
+.N{
+    padding-right: 128px;
+}
+#ApellidoPaterno, #ApellidoMaterno, #Nombres{
+    align-self: center;
+    padding: 10px;
+    border: 1px solid red;
+}
+.CuadroD{
+    padding-left: 80px;
+}
+.Long, .Edad, .Mes{
+    border: 1px solid red;
+    background: #cd5c5c;
+    color: white;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Longitud, #Edad, #Mes{
+    align-self: center;
+    padding: 10px;
+    border: 1px solid red;
+}
+.Long{
+    padding-right: 25px;
+}
+.Edad{
+    padding-right: 168px;
+}
+.Mes{
+    padding-right: 96px;
+}
