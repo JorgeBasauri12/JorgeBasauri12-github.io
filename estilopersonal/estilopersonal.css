@@ -291,7 +291,7 @@ form{
     display: flex;
     align-items: flex-start;
 }
-.Extraer{
+/*.Extraer{
     margin-top: 15px;
     margin-right: 30px;
     padding: 10px;
@@ -301,6 +301,9 @@ form{
     color: white;
     padding-left: 50px;
     padding-right: 50px;
+}
+.Extraer :hover{
+    background: #adff2f;
 }
 .Colorear{
     margin-top: 15px;
@@ -313,6 +316,9 @@ form{
     padding-left: 50px;
     padding-right: 50px;
 }
+.Colorear :hover{
+    background: #adff2f;
+}*/
 #NombresyApellidos, #FechaNacimiento{
     align-self: center;
     padding: 10px;
@@ -370,17 +376,17 @@ form{
     padding: 7px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#Longitud, #Edad, #Mes{
+#longitud, #edad, #mes{
     align-self: center;
     padding: 10px;
     border: 1px solid red;
 }
-.Long{
+#Long{
     padding-right: 25px;
 }
-.Edad{
+#Edad{
     padding-right: 168px;
 }
-.Mes{
+#Mes{
     padding-right: 96px;
 }
