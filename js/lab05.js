@@ -75,7 +75,8 @@
             let hoy = new Date();
             let cumpleanos = new Date(fecha);
             let edad = hoy.getFullYear() - cumpleanos.getFullYear();
-            let m = (hoy.getMonth()+1) - (cumpleanos.getMonth());
+            let m = (hoy.getMonth()+1) - (cumpleanos.getMonth()+1);
+            console.log( (hoy.getMonth()+1)+"-"+ (cumpleanos.getMonth()+1));
             if (m < 0) {
                 edad--;
             }else if (m==0) {
@@ -87,7 +88,7 @@
             let Meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
             let d = new Date(cumpleanos);
-            document.getElementById("mes").value = (Meses[d.getMonth()-1]);
+            document.getElementById("mes").value = (Meses[d.getMonth()]);
         }
     }; 
 

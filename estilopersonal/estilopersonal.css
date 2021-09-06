@@ -233,7 +233,7 @@ form{
         justify-content: center;
         align-items: center;
     }
-    indiceContact{
+    .indiceContact{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -262,6 +262,7 @@ form{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px; 
+    margin: auto;
 }
 .Cuerpo{
     border: 1px solid rgb(189, 241, 189);
@@ -389,4 +390,47 @@ form{
 }
 #Mes{
     padding-right: 96px;
+}
+@media screen and (max-width:1200px){
+    .body{
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .Cuerpo{
+        background-position: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .cuerpoS{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 60px;
+        width: 10%;
+        margin-bottom: 20px;
+    }
+    .NomApe{
+        margin-left: 250px;
+        padding-right: 10px;
+    }
+    .AN, .Fecha{
+        
+        font-size: 10px;
+    }
+    
+    .cuerpoI{        
+        flex-direction: column;
+        align-items: center;
+        width: 10%;
+    } 
+    .cuadrosI{
+        padding-bottom: 20px;
+    }
+    .CuadroD{
+        margin-left: -80px;
+    }
+    #Mes{
+        padding-right: 95px;
+    }
 }
