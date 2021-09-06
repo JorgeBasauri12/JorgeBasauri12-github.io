@@ -12,46 +12,47 @@
         btn.addEventListener("click", cambioColor);
         let temp = 0;
         function cambioColor() {
-        if (temp % 2 == 0) {
-            c1.style.backgroundColor= "#cd5c5c"
-            c1.style.border="1px solid red";
-            c2.style.backgroundColor= "#cd5c5c"
-            c2.style.border="1px solid red";
-            c3.style.backgroundColor= "#cd5c5c"
-            c3.style.border="1px solid red";
-            c4.style.backgroundColor= "#cd5c5c"
-            c4.style.border="1px solid red";
-            c5.style.backgroundColor= "#cd5c5c"
-            c5.style.border="1px solid red";  
-            c6.style.backgroundColor= "#4169e1"
-            c6.style.border="1px solid blue";    
-            c7.style.backgroundColor= "#4169e1"
-            c7.style.border="1px solid blue";    
-            c8.style.backgroundColor= "#4169e1"
-            c8.style.border="1px solid blue";            
-        } 
-        if (temp % 2 != 0){     
-            c1.style.backgroundColor= "#4169e1"
-            c1.style.border="1px solid blue";
-            c2.style.backgroundColor= "#4169e1"
-            c2.style.border="1px solid blue";
-            c3.style.backgroundColor= "#4169e1"
-            c3.style.border="1px solid blue";
-            c4.style.backgroundColor= "#4169e1"
-            c4.style.border="1px solid blue";
-            c5.style.backgroundColor= "#4169e1"
-            c5.style.border="1px solid blue";
-            c6.style.backgroundColor= "#cd5c5c"
-            c6.style.border="1px solid red";
-            c7.style.backgroundColor= "#cd5c5c"
-            c7.style.border="1px solid red";
-            c8.style.backgroundColor= "#cd5c5c"
-            c8.style.border="1px solid red";
-        }
-        temp += 1;
+            if (temp % 2 == 0) {
+                c1.style.backgroundColor= "#cd5c5c"
+                c1.style.border="1px solid red";
+                c2.style.backgroundColor= "#cd5c5c"
+                c2.style.border="1px solid red";
+                c3.style.backgroundColor= "#cd5c5c"
+                c3.style.border="1px solid red";
+                c4.style.backgroundColor= "#cd5c5c"
+                c4.style.border="1px solid red";
+                c5.style.backgroundColor= "#cd5c5c"
+                c5.style.border="1px solid red";  
+                c6.style.backgroundColor= "#4169e1"
+                c6.style.border="1px solid blue";    
+                c7.style.backgroundColor= "#4169e1"
+                c7.style.border="1px solid blue";    
+                c8.style.backgroundColor= "#4169e1"
+                c8.style.border="1px solid blue";            
+            } 
+            if (temp % 2 != 0){     
+                c1.style.backgroundColor= "#4169e1"
+                c1.style.border="1px solid blue";
+                c2.style.backgroundColor= "#4169e1"
+                c2.style.border="1px solid blue";
+                c3.style.backgroundColor= "#4169e1"
+                c3.style.border="1px solid blue";
+                c4.style.backgroundColor= "#4169e1"
+                c4.style.border="1px solid blue";
+                c5.style.backgroundColor= "#4169e1"
+                c5.style.border="1px solid blue";
+                c6.style.backgroundColor= "#cd5c5c"
+                c6.style.border="1px solid red";
+                c7.style.backgroundColor= "#cd5c5c"
+                c7.style.border="1px solid red";
+                c8.style.backgroundColor= "#cd5c5c"
+                c8.style.border="1px solid red";
+            }
+            temp += 1;
         }
         let btn1 = document.getElementById("Extraer")
-        btn1.addEventListener("click", function(){
+        btn1.addEventListener("click", extraer);
+        function extraer(){
             /*---AP-AM-N---*/
             const AN = document.getElementById("NombresyApellidos");
             let nombApe = AN.value;
@@ -87,7 +88,7 @@
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
             let d = new Date(cumpleanos);
             document.getElementById("mes").value = (Meses[d.getDate()-1]);
-        });
+        }
     }; 
 
 })();
