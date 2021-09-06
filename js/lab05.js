@@ -50,12 +50,8 @@
         }
         temp += 1;
         }
-    };    
-})();
-(function(){
-    window.onload=function(){
-        let btn = document.getElementById("Extraer")
-        btn.addEventListener("click", function(){
+        let btn1 = document.getElementById("Extraer")
+        btn1.addEventListener("click", function(){
             /*---AP-AM-N---*/
             const AN = document.getElementById('NombresyApellidos');
             let nombApe = AN.value;
@@ -92,6 +88,8 @@
             let d = new Date(cumpleanos);
             document.getElementById("mes").value = (Meses[d.getDate()-1]);
         });
-    }
+    }; 
+
 })();
+
 
