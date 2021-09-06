@@ -53,16 +53,16 @@
         let btn1 = document.getElementById("Extraer")
         btn1.addEventListener("click", function(){
             /*---AP-AM-N---*/
-            const AN = document.getElementById('NombresyApellidos');
+            const AN = document.getElementById("NombresyApellidos");
             let nombApe = AN.value;
             let N = nombApe.split(/\s+/);
-            const Paterno = document.getElementById('ApellidoPaterno');
+            const Paterno = document.getElementById("ApellidoPaterno");
             Paterno.value="";
             Paterno.value=N[0];
-            const Materno = document.getElementById('ApellidoMaterno');
+            const Materno = document.getElementById("ApellidoMaterno");
             Materno.value="";
             Materno.value=N[1];
-            const Nombre = document.getElementById('Nombres');
+            const Nombre = document.getElementById("Nombres");
             Nombre.value="";
             for (let i = 2; i < N.length; i++) {
                 Nombre.value+=N[i]+" ";                
