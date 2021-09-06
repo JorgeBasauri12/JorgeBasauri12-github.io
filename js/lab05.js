@@ -71,23 +71,23 @@
             /*---Longitud Apellido---*/
             document.getElementById("longitud").value= ("Posee "+(Paterno.value+ Materno.value).length + " letras");
             /*---Fecha Nacimiento---*/
-            let fecha= document.getElementById("FechaNacimiento").value;
+            let fecha= document.getElementById("FechaNacimiento").value;           
             let hoy = new Date();
             let cumpleanos = new Date(fecha);
             let edad = hoy.getFullYear() - cumpleanos.getFullYear();
-            let m = (hoy.getMonth()+1) - (cumpleanos.getDate());
+            let m = (hoy.getMonth()+1) - (cumpleanos.getMonth());
             if (m < 0) {
                 edad--;
             }else if (m==0) {
-                if (hoy.getDate() < (cumpleanos.getMonth()+1)) {
+                if (hoy.getDate() < cumpleanos.getDate()) {
                     edad--;
                 }
-            }
+            }            
             document.getElementById("edad").value=("Tiene "+edad+" años");            
             let Meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
             let d = new Date(cumpleanos);
-            document.getElementById("mes").value = (Meses[d.getDate()-1]);
+            document.getElementById("mes").value = (Meses[d.getMonth()-1]);
         }
     }; 
 
